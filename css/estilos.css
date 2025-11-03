@@ -1,0 +1,58 @@
+/* estilos.css - Coloca en css/estilos.css */
+
+/* ===== Reset / base ===== */
+* { box-sizing: border-box; }
+html,body { margin:0; padding:0; font-family: "Poppins", sans-serif; color:#222; }
+.container { max-width:1100px; margin:0 auto; padding:20px; }
+
+/* ===== Header ===== */
+.site-header { background:#3b8d3b; color:#fff; position:sticky; top:0; z-index:10; }
+.header-inner { display:flex; align-items:center; justify-content:space-between; gap:20px; }
+.logo { width:100px; display:block; padding:8px 0; }
+.nav-list { display:flex; list-style:none; gap:18px; margin:0; padding:0; }
+.nav-list a { color:#fff; text-decoration:none; font-weight:600; }
+.nav-list a.active { text-decoration:underline; }
+
+/* carrito btn */
+.carrito-btn { background:#fff; color:#3b8d3b; border-radius:20px; padding:8px 12px; border:0; cursor:pointer; font-weight:600; }
+
+/* ===== Hero ===== */
+.hero { height:60vh; display:flex; align-items:center; color:#923838; background: url("../img/portada.jpg") center/cover no-repeat; }
+.hero-content { text-align:left; padding:40px; background: rgba(0,0,0,0.25); border-radius:8px; color:#fff; }
+.hero-content h1 { margin:0 0 10px; font-size:2.2rem; }
+.cta { display:inline-block; margin-top:12px; padding:10px 18px; background:#ff9800; color:#080707; text-decoration:none; border-radius:20px; }
+
+/* ===== Sections ===== */
+.destacados { padding:40px 20px; }
+.grid { display:flex; gap:20px; flex-wrap:wrap; }
+.card, .menu-card { background:#fff; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,0.08); overflow:hidden; width:300px; }
+.card img, .menu-card img { width:100%; height:190px; object-fit:cover; display:block; }
+.card h3, .menu-card h3 { padding:12px 16px 0; margin:0; }
+.card p, .menu-card p { padding:0 16px 12px; margin:0; color:#555; }
+.precio { padding:0 16px 16px; font-weight:700; color:#3b8d3b; }
+
+/* Menú grid */
+.menu-grid { display:flex; gap:20px; flex-wrap:wrap; margin-top:20px; }
+
+/* Buttons */
+.add-btn { margin:12px 16px 16px; padding:8px 12px; border:0; background:#3b8d3b; color:#fff; border-radius:8px; cursor:pointer; }
+
+/* posts y recetas */
+.post { background:#fff; padding:16px; border-radius:10px; margin-bottom:20px; box-shadow:0 6px 14px rgba(0,0,0,0.06); }
+.post-img { width:100%; height:240px; object-fit:cover; border-radius:8px; }
+
+/* footer */
+.site-footer { background:#222; color:#fff; padding:14px 0; text-align:center; margin-top:30px; }
+
+
+/* modal carrito */
+.modal { display:none; position:fixed; inset:0; background: rgba(0,0,0,0.5); align-items:center; justify-content:center; z-index:20; }
+.modal-contenido { background:#fff; padding:20px; width:90%; max-width:520px; border-radius:10px; position:relative; }
+.close { position:absolute; right:10px; top:8px; border:0; background:transparent; font-size:20px; cursor:pointer; }
+
+/* responsive */
+@media (max-width:800px) {
+  .nav-list { display:none; }
+  .hero { height:50vh; }
+  .grid { justify-content:center; }
+}
