@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Menú | Verde Vida</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <img src="img/vector-logotipo-restaurante-vegano-vegetariano_.jpg" alt="Logo Verde Vida" class="logo">
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="menu.html" class="active">Menú</a></li>
+          <li><a href="recetas.html">Recetas</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <button id="btn-carrito" class="carrito-btn">Carrito (<span id="cart-count">0</span>)</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Menú</h1>
+    <p>Selecciona y agrega los platos que desees. (El carrito se guarda en tu navegador.)</p>
+
+    <section class="menu-grid">
+      <!-- Cada card tiene data-* para JS -->
+      <article class="menu-card" data-id="1" data-nombre="Ensalada Verde" data-precio="8.00">
+        <img src="img/ensalada verde.jpg" alt="Ensalada Verde">
+        <h3>Ensalada Verde</h3>
+        <p>Hojas mixtas, Manzana, Pepino y Yogurt.</p>
+        <p class="precio">S/ 8.00</p>
+        <button class="add-btn">Agregar al carrito</button>
+      </article>
+
+      <article class="menu-card" data-id="2" data-nombre="soltero de queso" data-precio="15.00">
+        <img src="img/soltero de queso.jpg" alt="soltero de queso">
+        <h3>Solterito de Queso</h3> 
+        <p> Fresco, colorido y 100% natural.</p>
+        <p class="precio">S/ 15.00</p>
+        <button class="add-btn">Agregar al carrito</button>
+      </article>
+
+      <article class="menu-card" data-id="3" data-nombre="Ensalada mediterranea" data-precio="12.00">
+        <img src="img/ensalada meditarrabea.jpeg" alt="Ensalada mediterranea">
+        <h3>Ensalada mediterranea</h3>
+        <p>Mix de lechuga, cherries, pepino, cebolla morada y aceitunas.</p>
+        <p class="precio">S/ 12.00</p>
+        <button class="add-btn">Agregar al carrito</button>
+      </article>
+
+      <article class="menu-card" data-id="4" data-nombre="Lentejas guisadas" data-precio="13.50">
+        <img src="img/Lentejas-Estofadas.jpg" alt="Lentejas guisadas">
+        <h3>Lentejas Guisadas</h3>
+        <p>Guiso de lentejas con verduras y especias.</p>
+        <p class="precio">S/ 13.50</p>
+        <button class="add-btn">Agregar al carrito</button>
+      </article>
+
+      <article class="menu-card" data-id="5" data-nombre="Tacos vegetarianos" data-precio="11.50">
+        <img src="img/tacos-veggies-de-garbanzo-940x460.jpg" alt="Tacos vegetarianos">
+        <h3>Tacos Vegetarianos</h3>
+        <p>Tortillas.</p>
+        <p class="precio">S/ 11.50</p>
+        <button class="add-btn">Agregar al carrito</button>
+      </article>
+
+      <article class="menu-card" data-id="6" data-nombre="Brownie vegano" data-precio="8.00">
+        <img src="img/BROWNI.jpg" alt="Brownie vegano">
+        <h3>Brownie Vegano</h3>
+        <p>Postre de cacao y semillas.</p>
+        <p class="precio">S/ 8.00</p>
+        <button class="add-btn">Agregar al carrito</button>
+      </article>
+    </section>
+  </main>
+
+  <!-- Modal sencillo del carrito -->
+  <div id="carrito-modal" class="modal">
+    <div class="modal-contenido">
+      <button id="close-modal" class="close">✕</button>
+      <h2>Tu carrito</h2>
+      <div id="cart-items"></div>
+      <p id="cart-total">Total: S/ 0.00</p>
+      <button id="checkout" class="cta">Realizar pedido</button>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Madison Restaurant</p>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>

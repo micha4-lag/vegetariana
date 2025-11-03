@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contacto | Verde Vida</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <img src="img/vector-logotipo-restaurante-vegano-vegetariano_.jpg" alt="Logo Verde Vida" class="logo">
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="menu.html">Menú</a></li>
+          <li><a href="recetas.html">Recetas</a></li>
+          <li><a href="contacto.html" class="active">Contacto</a></li>
+        </ul>
+      </nav>
+      <button id="btn-carrito" class="carrito-btn">Carrito (<span id="cart-count">0</span>)</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Contacto</h1>
+    <p>Escríbenos o llámanos para pedidos y consultas realizamos delivery.</p>
+
+    <form id="contact-form" class="contact-form" onsubmit="enviarMail(event)">
+      <br>
+      <label>Nombre<br><input type="text" id="name" required></label>
+      <br>
+      <label>Correo<br><input type="email" id="email" required></label>
+      <br>
+      <label>Mensaje<br><textarea id="message" rows="5" required></textarea></label>
+      <br>
+      <button type="submit" class="cta">Enviar mensaje</button>
+    </form>
+
+    <section class="info-contact">
+      <h2>Dirección y teléfono</h2>
+      <p>Av. Sol-120, Espinar · Tel: +51 973335096</p>
+
+      <!-- Si quieres, reemplaza el src con el embed de tu ubicación en Google Maps -->
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234.81826328702437!2d-71.40976430499815!3d-14.79440222782618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9169110047b337d7%3A0x86ff5124a7d335b7!2sRestaurant%20Madison!5e1!3m2!1ses!2spe!4v1762099298832!5m2!1ses!2spe" 
+       width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Madison Restaurant</p>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
